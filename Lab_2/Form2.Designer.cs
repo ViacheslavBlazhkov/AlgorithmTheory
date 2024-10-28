@@ -29,15 +29,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.elementsInput)).BeginInit();
             this.SuspendLayout();
             // 
+            // startedNumbersRichBox
+            // 
+            this.startedNumbersRichBox.Size = new System.Drawing.Size(88, 183);
+            // 
+            // sortedNumbersRichBox
+            // 
+            this.sortedNumbersRichBox.Size = new System.Drawing.Size(91, 183);
+            // 
             // sortRadio1
             // 
-            this.sortRadio1.Size = new System.Drawing.Size(67, 20);
+            this.sortRadio1.Size = new System.Drawing.Size(55, 17);
+            this.sortRadio1.Tag = "";
             this.sortRadio1.Text = "Merge";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1096, 450);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(822, 366);
             this.Name = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox1.ResumeLayout(false);

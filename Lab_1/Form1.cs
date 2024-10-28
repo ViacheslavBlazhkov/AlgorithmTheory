@@ -7,6 +7,8 @@ namespace Lab_1
 {
     public partial class Form1 : Form
     {
+        protected CustomArray array;
+
         public delegate void SortDelegate();
         protected SortDelegate sortMethod;
 
@@ -17,11 +19,11 @@ namespace Lab_1
 
         protected void sortBtn_Click(object sender, EventArgs e)
         {
-            var arraySorting = new CustomArray((int)elementsInput.Value, GetStartedOrder());
-            WriteNumbersToRichBox(arraySorting.numbers, startedNumbersRichBox);
-            setSortDelegate(arraySorting, GetSortType());
+            array = new CustomArray((int)elementsInput.Value, GetStartedOrder());
+            WriteNumbersToRichBox(array.numbers, startedNumbersRichBox);
+            setSortDelegate(array, GetSortType());
             sortMethod();
-            WriteNumbersToRichBox(arraySorting.numbers, sortedNumbersRichBox);
+            WriteNumbersToRichBox(array.numbers, sortedNumbersRichBox);
         }
 
         protected virtual void setSortDelegate(CustomArray array, SortType sortType)
