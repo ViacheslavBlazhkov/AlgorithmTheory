@@ -43,7 +43,7 @@ namespace Lab_1
         {
             Stopwatch timer = new Stopwatch();
             CustomArray array;
-            for (int elements = 2; elements <= 4096; elements *= 2)
+            for (int elements = 10; elements <= 5010; elements += 500)
             {
                 array = new CustomArray(elements, GetStartedOrder());
                 timer.Restart();

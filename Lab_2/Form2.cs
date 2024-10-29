@@ -17,6 +17,5 @@ namespace Lab_2
             else sortMethod = mergeArray.InsertingSort;
             base.array = mergeArray;
         }
-
     }
 }
