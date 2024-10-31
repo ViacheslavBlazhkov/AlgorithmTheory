@@ -20,6 +20,11 @@ namespace Lab_1
         protected void sortBtn_Click(object sender, EventArgs e)
         {
             array = new CustomArray((int)elementsInput.Value, GetStartedOrder());
+            SortAndWrite();
+        }
+
+        protected virtual void SortAndWrite()
+        {
             WriteNumbersToRichBox(array.numbers, startedNumbersRichBox);
             setSortDelegate(array, GetSortType());
             sortMethod();

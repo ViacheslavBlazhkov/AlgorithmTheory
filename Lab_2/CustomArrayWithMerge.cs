@@ -13,7 +13,7 @@ namespace Lab_2
 
         public void MergeSort() => numbers = GetMergedArray(numbers);
 
-        private int[] GetMergedArray(int[] array)
+        protected int[] GetMergedArray(int[] array)
         {
             if (array.Length == 1)
             {
@@ -27,7 +27,7 @@ namespace Lab_2
             return MergeArrays(firstHalf, secondHalf);
         }
 
-        private int[] MergeArrays(int[] array1, int[] array2)
+        protected virtual int[] MergeArrays(int[] array1, int[] array2)
         {
             int[] mergedArray = new int[array1.Length + array2.Length];
             int i = 0, j = 0, k = 0;

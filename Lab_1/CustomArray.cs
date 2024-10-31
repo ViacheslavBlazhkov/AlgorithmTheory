@@ -26,7 +26,7 @@ namespace Lab_1
             }
         }
 
-        public void InsertingSort()
+        public virtual void InsertingSort()
         {
             for (int i = 1; i < count; i++)
             {
